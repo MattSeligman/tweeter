@@ -47,15 +47,3 @@
   .tweet-angle-double-down:before {
     content: "\f103";
   }
-  
-  /* -- Icon Customizations (Style) */
-  .tweet-user-01{
-        font-size: 6.8em;
-        color: grey;
-  }
-
-  .tweet-angle-double-down { 
-    color: #03134c;
-    font-size: 1.2em;
-    font-weight: 600;
-  }
