@@ -7,8 +7,15 @@ const express       = require("express");
 const bodyParser    = require("body-parser");
 const app           = express();
 
+// Added for JSON GZip Compression
+const compression   = require('compression');
+
+// Compress all HTTP responses
+app.use(compression());
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
+
 
 // The in-memory database of tweets. It's a basic object with an array in it.
 const db = require("./lib/in-memory-db");
