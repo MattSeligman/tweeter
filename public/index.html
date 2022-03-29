@@ -15,6 +15,7 @@
 
     <!-- External JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -22,16 +23,24 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <header>
     <nav>
-      <span>tweeter</span>
+      <span id="logo">tweeter</span>
       <span class="navCTA">
         <span><strong>Write</strong> a new tweet</span>
-        <span class="icon-angle-double-down"></span>
+        <span class="tweet-angle-double-down"></span>
       </span>
     </nav>
-  </header>
 
+    
+    <header>
+      <div id="profile">
+        <div class="avatar"><span class="tweet-user-01"></span></div>
+        <div class="name">
+          <h2><span class="firstName">Amy</span> Mansell</h2>
+        </div>
+      </div>
+      <div id="animatedBackground"><lottie-player src="https://assets1.lottiefiles.com/packages/lf20_LmsPuq.json"  background="transparent"  speed="0.3"  style="width: 100vw; height: auto; overflow:hidden;"   loop  autoplay></lottie-player></div>
+    </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
       test
