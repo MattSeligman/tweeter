@@ -1,0 +1,38 @@
+#tweetMessage {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5em 0 0 0;
+  }
+  
+  #tweetMessage > label {
+    display: inherit;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+  }
+  .tweetDetails{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+  }
+
+  input#tweet{
+    outline: none;
+    background-color: transparent;
+    border-bottom: solid #333333;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    transition: 2s;
+  }
+
+  input#tweet:focus{
+    border-bottom: solid #2347c1;
+    transition: 2s;
+  }
+  
+  .btnTweet{
+    background-color: #2347c1;
+    color: white;
+    font-weight: 600;
+    border: solid #2347c1;
+  }
