@@ -2,48 +2,57 @@
  * Icons
  */
  @font-face {
-    font-family: 'tweeter';
-    src:  url('fonts/tweeter.eot?mrwlmc');
-    src:  url('fonts/tweeter.eot?mrwlmc#iefix') format('embedded-opentype'),
-      url('fonts/tweeter.ttf?mrwlmc') format('truetype'),
-      url('fonts/tweeter.woff?mrwlmc') format('woff'),
-      url('fonts/tweeter.svg?mrwlmc#tweeter') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="tweet-"], [class*=" tweet-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'tweeter' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-   /* -- User Icon (content) -- */
-  .tweet-user-01:before {
-    content: "\e900";
-  }
+  font-family: 'tweeter';
+  src:  url('./fonts/tweeter.eot?pm9pnk');
+  src:  url('./fonts/tweeter.eot?pm9pnk#iefix') format('embedded-opentype'),
+    url('./fonts/tweeter.ttf?pm9pnk') format('truetype'),
+    url('./fonts/tweeter.woff?pm9pnk') format('woff'),
+    url('./fonts/tweeter.svg?pm9pnk#tweeter') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
-  /* -- Heart Icon (content) -- */
-  .tweet-like:before {
-    content: "\f004";
-  }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'tweeter' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-  /* -- Chat Bubble Reply Icon (content) -- */
-  .tweet-reply:before {
-    content: "\f075";
-  }
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  /* -- FontAwesome "angle-double-down" Icon (content) -- */
-  .tweet-angle-double-down:before {
-    content: "\f103";
-  }
+.icon-user-01:before {
+  content: "\e900";
+}
+
+.icon-like:before {
+  content: "\f004";
+}
+.icon-flag:before {
+  content: "\f024";
+}
+.icon-retweet:before {
+  content: "\f079";
+}
+.icon-angle-double-down:before {
+  content: "\f103";
+}
+ 
+/* -- Icon Customizations (Style) */
+.icon-user-01{
+      font-size: 6.8em;
+      color: grey;
+}
+
+.icon-angle-double-down { 
+  color: #03134c;
+  font-size: 1.2em;
+  font-weight: 600;
+}

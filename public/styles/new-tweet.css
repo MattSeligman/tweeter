@@ -1,10 +1,12 @@
 section.new-tweet > form {
     display: flex;
     flex-direction: column;
+    margin: auto auto 2.5em auto;
+    font-weight: bold;
 }
 
 section.new-tweet > form > div { 
-    display: flex; 
+    display: inherit; 
     flex-direction: row; 
     justify-content: space-between; 
 }
@@ -36,4 +38,53 @@ section.new-tweet > form > div > button{
 
 .characterLimit {
     color: red;
+}
+
+article.tweet {
+    
+    margin: 1em 0 2em 0;
+    padding: 0 0.3em;
+    border: solid;
+}
+
+article.tweet header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin: 0 0.4em;
+}
+
+article.tweet header > h2 {
+    display: inherit;
+    align-items: inherit;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+h2 span.icon-user-01 {
+    font-size: 75px;
+}
+
+article.tweet address, article.tweet address a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    color: #c5cbe4;
+}
+
+section.tweet_message > p {
+    font-weight: bold;
+    margin: 1em 0.5em;
+}
+
+article.tweet footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.9em 0.8em;
+    border-top: solid;
+    font-weight: 600;
+    font-size: 0.6em;
 }
