@@ -1,30 +1,31 @@
 nav { 
+    box-sizing:border-box;
     position:fixed;
     width: 100%;
     height: 120px;
     display: flex;
     align-items: end;
     justify-content: space-between;
-    padding: 0em 1.5em 0.8em 1.5em;
     font-family: 'Bungee', cursive;
     background-color: #4056A1;
     color: #FFFFFF;
     z-index: 1;
    }
-  
-   #logo { 
+
+   nav span#logo {
     font-size:2em;
+    margin: 0 0 0.2em 0.5em
    }
-  
-   .navCTA{
-     font-family: 'Source Sans Pro', sans-serif;
+
+   nav span.navCTA {
+    font-family: 'Source Sans Pro', sans-serif;
      display: flex;
      flex-direction: column;
      align-items: center;
+     margin: 0 1.5em 0.5em 0;
    }
-
-   
-  .icon-angle-double-down { 
+     
+   nav span.navCTA span.icon-angle-double-down { 
     color: #03134c;
     font-size: 1.2em;
     font-weight: 600;

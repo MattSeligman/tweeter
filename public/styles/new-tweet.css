@@ -15,12 +15,8 @@ textarea#tweet-text {
     outline: none;
     resize: none;
     background-color: transparent;
-    border-top: none;
-    border-right: none;
+    border:none;
     border-bottom: solid #333333;
-    border-left: none;
-    height: 40px;
-    margin: 0 0 20px;
     transition: 2s;
 }
 
@@ -41,10 +37,13 @@ section.new-tweet > form > div > button{
 }
 
 article.tweet {
-    
     margin: 1em 0 2em 0;
-    padding: 0 0.3em;
     border: solid;
+    transition: 0.3s;
+}
+
+article.tweet:hover{
+    box-shadow: #c9cae2 5px 5px;
 }
 
 article.tweet header {
@@ -80,6 +79,7 @@ section.tweet_message > p {
 }
 
 article.tweet footer {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -88,3 +88,9 @@ article.tweet footer {
     font-weight: 600;
     font-size: 0.6em;
 }
+
+footer span.tweet-actions span {
+    margin: 0 0.3em;
+    font-size: 1.6em;
+}
+

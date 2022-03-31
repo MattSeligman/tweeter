@@ -6,7 +6,7 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*, *:hover, *:after {
   box-sizing: inherit;
 }
 
@@ -32,9 +32,7 @@ body > header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
-  overflow-x: hidden;
-  height: 520px; /* When SCSS set same height as animated BG */
+  height: 100%;
   width: 100%;
   background-image: linear-gradient( #f6cda036, #4056a1);
 }
@@ -46,6 +44,10 @@ header > div:nth-child(1) {
   flex-direction: column;
   align-items: center;
   margin: 1em;
+}
+
+main{
+  margin: 0 5%;
 }
 
 /* Avatar */
@@ -63,7 +65,7 @@ header > div:nth-child(1){
 
 header > div:nth-child(3) > h2{
   color: #ffffff;
-  margin: 0px;
+  margin: 0 0 1.5em 0;
   text-shadow: #03134c 1px 1px 2px;
   font-weight: 600;
 }
@@ -87,12 +89,18 @@ header > div:nth-child(3) > h2::last-word{
   width: 100vw;
 }
 
-main{
-  margin: 0 5%;
-}
-
 /* -- Icon Customizations (Style) */
 .tweet-user-01{
   font-size: 6.8em;
   color: grey;
+}
+
+article.tweet footer span.icon-like:hover {
+  color: #d63031;
+}
+article.tweet footer span.icon-flag:hover {
+  color: #6c5ce7;
+}
+article.tweet footer span.icon-retweet:hover {
+  color: #0984e3;
 }
