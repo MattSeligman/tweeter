@@ -183,15 +183,10 @@ $(() => {
   $("span.navCTA").click(()=>{
         
     let scrollLocation = $(window).scrollTop();
-    const inputLocation = ($('textarea#tweet-text').offset().top - 200);
+    const inputLocation = ($('textarea#tweet-text').offset().top);
     const postLocation = ($('body > main > section:nth-child(3)').offset().top);
         
-    if (scrollLocation <= inputLocation) {
-
-      return $(window).scrollTop(postLocation);
-    }
-        
-    $(window).scrollTop(inputLocation);
+    $(window).scrollTop(inputLocation - 150);
   });
 
   // Scroll to to Top Function

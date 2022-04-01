@@ -56,11 +56,12 @@ article.tweet header {
     margin: 0 0.4em;
 }
 
-article.tweet header > h2 {
+article.tweet header div > h2 {
     display: inherit;
     align-items: inherit;
     font-weight: 400;
     font-size: 1em;
+    margin: 1.3em 0 0 0;
 }
 
 h2 span.icon-user-01 {
@@ -72,6 +73,7 @@ article.tweet address, article.tweet address a {
     font-style: normal;
     font-weight: bold;
     color: #c5cbe4;
+    font-size: 0.8em;
 }
 
 section.tweet_message > p {
@@ -85,6 +87,7 @@ article.tweet footer {
     flex-direction: row;
     justify-content: space-between;
     padding: 0.9em 0.8em;
+    margin: 0.8em;
     border-top: solid;
     font-weight: 600;
     font-size: 0.6em;

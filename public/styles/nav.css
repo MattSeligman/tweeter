@@ -14,8 +14,10 @@ nav {
 
    nav span#logo {
     font-size:2em;
-    margin: 0 0 0.2em 0.5em
-   }
+    margin: 0 0 0.2em 0.5em;
+    text-shadow: 2px 3px #4056a1;
+    -webkit-text-stroke: 2px #4056a1;
+  }
 
    nav span.navCTA {
     font-family: 'Source Sans Pro', sans-serif;
@@ -23,15 +25,16 @@ nav {
      flex-direction: column;
      align-items: center;
      margin: 0 1.5em 0.5em 0;
+     cursor:pointer;
    }
      
    nav span.navCTA span.icon-angle-double-down { 
     color: #03134c;
     font-size: 1.2em;
     font-weight: 600;
-    
     animation: bounce 2s infinite ease-in-out;    
   }
+  
 
   @keyframes bounce {
     0% { 
