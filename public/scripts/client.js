@@ -76,7 +76,7 @@ $(() => {
         `<section>
             <article class="tweet">
             <header>
-                <div><img src="${avatar}" title="${username}" alt="${username}'s Profile Photo"><h2>${username}</h2></div>
+                <div><img src="${avatar}" title="${username}" width="64px" height="64px" alt="${username}'s Profile Photo"><h2>${username}</h2></div>
                 <address class="author"><a rel="author" href="#">${handle}</a></address>
             </header>
             <section class="tweet_message">
