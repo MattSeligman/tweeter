@@ -9,7 +9,7 @@ nav {
     font-family: 'Bungee', cursive;
     background-color: #4056A1;
     color: #FFFFFF;
-    z-index: 1;
+    z-index: 2;
    }
 
    nav span#logo {
