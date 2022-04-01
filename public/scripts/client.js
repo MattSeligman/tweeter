@@ -43,6 +43,7 @@ $(() => {
 
         });
     }
+    
     loadtweets();
 
     /**
@@ -179,11 +180,33 @@ $(() => {
 
     $( "span.navCTA" ).click(()=>{
         
-        const scrollLocation = $(window).scrollTop();
+        let scrollLocation = $(window).scrollTop();
+
         if (scrollLocation === 400){
             return $(window).scrollTop('680')
         }
         
         $(window).scrollTop('400');
     });
+
+    // Scroll to to Top Function
+    // [ ] Note: Requested to put in Composer.js file 
+    // (not sure why single function new file)?
+    $( window ).scroll(()=>{
+        
+        let scrollLocation = $(window).scrollTop();
+        if(scrollLocation > 400){
+            
+            $('.scrollToTop').css('display', 'hidden');
+            return $('.scrollToTop').show();
+        }
+
+        $('.scrollToTop').hide();
+    });
+
+    $( '.scrollToTop' ).click(()=>{
+        $(window).scrollTop('0');
+    });
+
+
 });

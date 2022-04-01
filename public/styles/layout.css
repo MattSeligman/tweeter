@@ -70,7 +70,6 @@ body > header > div:nth-child(3) > h2::last-word{
   font-weight: normal;
 }
   
-
 #animatedBackground > lottie-player{
   width: 100vw; 
   height: auto; 
@@ -113,8 +112,34 @@ article.tweet footer span.icon-retweet:hover {
   margin: 1em 0 0 0;
   animation: fadeIn;
   transition: 2s;
+  cursor: help;
 }
 
 section.tweet_message {
   overflow-wrap: break-word;
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  height: 4em;
+  width: 4em;
+  background-color: red;
+  border-radius: 2em;
+  cursor: pointer;
+}
+
+.scrollToTop div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  width: inherit;
+}
+
+.scrollToTop div span {
+  color: white;
+  font-size: 2em;
+  transform: rotate(180deg);
 }
