@@ -18,13 +18,20 @@ This repository is a demonstration of the HTML, CSS, JS, jQuery and AJAX front-e
 - chance
 - compression
 - timeago.js
-## Features
+- normalize.css
+- lottie-player
+- jQuery
+- fonts.googleapis.com
 
+## Features
 - Communicates with a server via AJAX
 - Tweets instantly without refresh
 - Error handling setup for Tweets
 - Prevents XSS injection
 - Supports all device sizes
+- LottieFile Animation for Background
+- SVG Icon's from Font generated from https://icomoon.io/ 
+
 ## Screenshots
 
 * *Fully Responsive - Supports all devices*
@@ -36,11 +43,11 @@ This repository is a demonstration of the HTML, CSS, JS, jQuery and AJAX front-e
 * Prevents using more than the limited amount of characters.
   ![Limits Characters](https://github.com/MattSeligman/tweeter/blob/master/docs/limits-characters.jpg?raw=true)
 
-* Detects if "require" removed from input and prohibits blank tweets.
-  ![Prevents Input](https://github.com/MattSeligman/tweeter/blob/master/docs/detects-missing-information.jpg?raw=true)
-
 * *Tests for Inputs if they haven't been included*
   ![Tests for Inputs](https://github.com/MattSeligman/tweeter/blob/master/docs/tests-for-inputs.jpg?raw=true)
+
+* Detects if "require" removed from textarea and prohibits blank tweets.
+  ![Prevents Input](https://github.com/MattSeligman/tweeter/blob/master/docs/detects-missing-information.jpg?raw=true)
 
 * *Wraps Text (Preventing Design breakage)*
   ![Wraps text](https://github.com/MattSeligman/tweeter/blob/master/docs/text-wraps.jpg?raw=true)
