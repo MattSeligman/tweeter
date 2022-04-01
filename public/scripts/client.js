@@ -13,14 +13,6 @@ $(() => {
   const tweetButton = 'section.new-tweet form button';
   const textAreaInput = 'textarea#tweet-text';
   let tweets = null;
-    
-
-  let p = $(textAreaInput);
-  let position = p.position();
-
-  // let test = $( "p" ).last().text( "left: " + position.left + ", top: " + position.top );
-  console.log(`position`, position);
-
 
   /**
      * Loads tweets from the route /tweets/ and pulls the order in reverse.
@@ -33,7 +25,6 @@ $(() => {
       tweets = tweetData.reverse();
 
       if (onPost === 'currentTweet') {
-        console.log("Triggered");
         const latestEntry = tweetData[0];
         const newTweetSection = 'body > main > section.new-tweet + section';
         return $(newTweetSection).prepend(createTweetElement(latestEntry));
@@ -145,12 +136,14 @@ $(() => {
       $(warning).removeClass('hidden');
 
       /* slideDown method available if required but I found it sluggish */
-      // if ( $( warning ).is( ":hidden" ) ) {
-      //     $( warning ).slideDown( "slow" );
-      //   } else {
-      //     $( warning ).hide();
-      //   }
-              
+      /*
+      if ( $( warning ).is( ":hidden" ) ) {
+          $( warning ).slideDown( "slow" );
+        } else {
+          $( warning ).hide();
+        }
+      */
+
       if (tooManyCharacters) {
         focusOnInput();
                 
@@ -182,9 +175,7 @@ $(() => {
 
   $("span.navCTA").click(()=>{
         
-    let scrollLocation = $(window).scrollTop();
     const inputLocation = ($('textarea#tweet-text').offset().top);
-    const postLocation = ($('body > main > section:nth-child(3)').offset().top);
         
     $(window).scrollTop(inputLocation - 150);
   });
