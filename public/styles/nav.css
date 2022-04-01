@@ -35,6 +35,16 @@ nav {
     animation: bounce 2s infinite ease-in-out;    
   }
   
+  @media screen and (max-width: 425px) {
+    nav{
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    nav span.navCTA{
+      margin: 0;
+    }
+  }
 
   @keyframes bounce {
     0% { 
