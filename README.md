@@ -51,3 +51,6 @@ This repository is a demonstration of the HTML, CSS, JS, jQuery and AJAX front-e
 
 * *Wraps Text (Preventing Design breakage)*
   ![Wraps text](https://github.com/MattSeligman/tweeter/blob/master/docs/text-wraps.jpg?raw=true)
+
+* High Optimization though room for improvement.
+  ![Wraps text](https://github.com/MattSeligman/tweeter/blob/master/docs/room-for-improvement.jpg?raw=true)
