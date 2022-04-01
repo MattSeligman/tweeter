@@ -5,10 +5,11 @@ section.new-tweet > form {
     font-weight: bold;
 }
 
-section.new-tweet > form > div { 
-    display: inherit; 
-    flex-direction: row; 
-    justify-content: space-between; 
+section.new-tweet > form > div {
+    display: inherit;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.4em;
 }
 
 textarea#tweet-text {

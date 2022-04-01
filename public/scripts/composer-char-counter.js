@@ -9,9 +9,15 @@ $(document).ready(function(){
     }
 
     const limitControl = ()=>{
-        (characterLimit - checkLength() <= 0 )
-        ? outputText.addClass('characterLimit')
-        : outputText.removeClass('characterLimit');
+        if (characterLimit - checkLength() < 0 ){
+            outputText.addClass('characterLimit');
+            $('.warning').removeClass( 'hidden' );
+            $('.warning').text( `Woops! We've used too many characters.` );
+
+        } else {
+            $('.warning').addClass( 'hidden' );
+            outputText.removeClass('characterLimit');
+        }
     }
     
     const outputText = $('textarea#tweet-text', this ).next().children('output');
@@ -23,22 +29,21 @@ $(document).ready(function(){
         
         outputText.text( characterLimit - checkLength() )        
 
-        // // delete key
-        // if(letter.keyCode == '8'){
-        //     return true;
-        // }
-
-        // // enter
-        // if(letter.keyCode == '13'){
-        //     console.log("Enter");
-        //     return false;
-        // }
+        // enter 
+        // stretch goal [ ] trigger Post with enter
+        if(letter.keyCode == '13'){
+            console.log("Enter");
+            return false;
+        }
 
     });
  
     $('textarea#tweet-text').on('keyup', ( letter )=>{  
         outputText.text( characterLimit - checkLength() );
-        limitControl();   
+        limitControl();
+        
+
+        console.log( characterLimit - checkLength() ); 
     });
  
 });

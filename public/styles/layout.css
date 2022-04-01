@@ -10,6 +10,11 @@ html {
   box-sizing: inherit;
 }
 
+/* I'll add my own HTML only because you insist! */
+html{
+  scroll-behavior: smooth;
+}
+
 /*
  * Global layout stuff
  */
@@ -37,21 +42,12 @@ body > header {
   background-image: linear-gradient( #f6cda036, #4056a1);
 }
 
-header > div:nth-child(1) {
-  width: inherit;
-  height: inherit;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1em;
-}
-
 main{
   margin: 0 5%;
 }
 
 /* Avatar */
-header > div:nth-child(1){
+body > header > div:nth-child(1){
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,14 +59,14 @@ header > div:nth-child(1){
   background-color: #FFFFFF;
 }
 
-header > div:nth-child(3) > h2{
+body > header > div:nth-child(3) > h2{
   color: #ffffff;
   margin: 0 0 1.5em 0;
   text-shadow: #03134c 1px 1px 2px;
   font-weight: 600;
 }
 
-header > div:nth-child(3) > h2::last-word{
+body > header > div:nth-child(3) > h2::last-word{
   font-weight: normal;
 }
   
@@ -103,4 +99,22 @@ article.tweet footer span.icon-flag:hover {
 }
 article.tweet footer span.icon-retweet:hover {
   color: #0984e3;
+}
+
+/* Alert Message */
+.hidden { display: none; }
+.warning {
+  border: solid #d63031 1px;
+  background-color: #ff7675;
+  transform: scale(1);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  margin: 1em 0 0 0;
+  animation: fadeIn;
+  transition: 2s;
+}
+
+section.tweet_message {
+  overflow-wrap: break-word;
 }
