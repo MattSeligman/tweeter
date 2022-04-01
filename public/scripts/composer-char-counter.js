@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$().ready(()=>{
 
   const characterLimit = 140;
   let inputLength = 1;
@@ -31,10 +31,9 @@ $(document).ready(function() {
 
     // enter
     // stretch goal [ ] trigger Post with enter
-    if (letter.keyCode == '13') {
-      console.log("Enter");
-      return false;
-    }
+    // if (letter.keyCode == '13') {
+    //   return false;
+    // }
 
   });
  
