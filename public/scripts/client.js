@@ -152,7 +152,7 @@ $(() => {
 
       focusOnInput();
       $(textAreaInput).val('');
-      $('section.new-tweet output.counter').text('140')
+      $('section.new-tweet output.counter').text('140');
       return $(warning).text(`Woops! We've forgotten our tweet!`);
     }
 
