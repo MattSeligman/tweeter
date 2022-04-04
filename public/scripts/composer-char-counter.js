@@ -4,7 +4,7 @@ $().ready(()=>{
   let inputLength = 1;
     
   const checkLength = ()=>{
-    inputLength = $('textarea#tweet-text', this).val().length;
+    inputLength = $('textarea#tweet-text').val().length;
     return inputLength;
   };
 
@@ -20,29 +20,25 @@ $().ready(()=>{
     }
   };
     
-  const outputText = $('textarea#tweet-text', this).next().children('output');
+  const outputText = $('textarea#tweet-text').next().children('output');
 
   $('textarea#tweet-text').on('keydown', (letter)=>{
     inputLength++;
         
     limitControl();
-        
     outputText.text(characterLimit - checkLength());
 
-    // enter
-    // stretch goal [ ] trigger Post with enter
-    // if (letter.keyCode == '13') {
-    //   return false;
-    // }
+    // Limits tweet to one line
+    if (letter.keyCode == '13') {
+      return false;
+    }
 
   });
  
-  $('textarea#tweet-text').on('keyup', (letter)=>{
+  $('textarea#tweet-text').on('keyup', ()=>{
     outputText.text(characterLimit - checkLength());
     limitControl();
-        
 
-    console.log(characterLimit - checkLength());
   });
  
 });

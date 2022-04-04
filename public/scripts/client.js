@@ -127,7 +127,7 @@ $(() => {
     // grab the int value of the text counter
     const counter = parseInt($('section.new-tweet output.counter').text());
 
-    const submission = $(textAreaInput).val();
+    const submission = $(textAreaInput).val().trim();
     const tooManyCharacters = (counter < 0);
     const noCharacters = submission === '' || submission === null;
     const warning = $('.warning');
@@ -151,6 +151,8 @@ $(() => {
       }
 
       focusOnInput();
+      $(textAreaInput).val('');
+      $('section.new-tweet output.counter').text('140')
       return $(warning).text(`Woops! We've forgotten our tweet!`);
     }
 

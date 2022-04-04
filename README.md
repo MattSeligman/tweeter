@@ -18,6 +18,7 @@ This repository is a demonstration of the HTML, CSS, JS, jQuery and AJAX front-e
 - chance
 - compression
 - timeago.js
+- MD5
 - normalize.css
 - lottie-player
 - jQuery
