@@ -97,10 +97,10 @@ $(() => {
   };
 
   /**
-     * Loops through existing tweets & appends to the Tweets Container
-     * * Uses the `createTweetElement(object)` function
-     * @param {object} tweets
-     */
+   * Loops through existing tweets & appends to the Tweets Container
+   * * Uses the `createTweetElement(object)` function
+   * @param {object} tweets
+  */
   const renderTweets = (tweets)=>{
 
     for (let tweet of tweets) {
@@ -111,14 +111,14 @@ $(() => {
   /**
      * Focus's the user on the Tweet input field
      * * [ ] Goal - add mini background animation if time permits
-     */
+  */
   const focusOnInput = ()=>{
     $(textAreaInput).focus();
   };
        
 
   // force HTML5 validation (Even though they can remove it manually)
-  $(textAreaInput).prop('required',true);
+  // $(textAreaInput).prop('required',true);
 
   /* On Tweet */
   $(tweetForm).on('submit', (event)=>{
@@ -170,6 +170,7 @@ $(() => {
       }
     }).done(()=>{
 
+      $('section.new-tweet output.counter').text('140');
       loadtweets('currentTweet');
     });
 
